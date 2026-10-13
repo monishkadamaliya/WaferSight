@@ -1,0 +1,24 @@
+{
+  "created": "2026-10-13T11:49:59",
+  "dataset_file": "Wafer_Map_Datasets.npz",
+  "n_wafers_used": 38015,
+  "quick_mode": false,
+  "seed": 42,
+  "split": {
+    "fit": 24329,
+    "validation": 6083,
+    "test": 7603,
+    "test_fraction": 0.2,
+    "validation_fraction_of_train": 0.2,
+    "stratified_by": "label combination (falls back to random if a class is too small)"
+  },
+  "preprocessing": "flatten 52x52 map, divide by 2 (values 0, 0.5, 1)",
+  "threshold_tuning": "per-label F1-maximising threshold on validation data",
+  "evaluation": "single pass on the held-out test set",
+  "versions": {
+    "python": "3.14.4",
+    "scikit_learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  }
+}
