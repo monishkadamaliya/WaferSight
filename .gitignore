@@ -1,6 +1,28 @@
-.venv/
-.venv-demo/
+
+# Python
 __pycache__/
 *.py[cod]
-.env
+*.pyd
+
+# Virtual environments
+.venv/
+.venv-demo/
+venv/
+env/
+
+# IDE and operating system
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large datasets and experiment outputs
+Wafer_Map_Datasets.npz
+tuned_test_results.npz
+
+# Large trained model
+wafer_random_forest.joblib
+
+# Logs and temporary files
+*.log
 .streamlit/secrets.toml
+.env
