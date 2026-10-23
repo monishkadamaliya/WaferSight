@@ -1289,9 +1289,19 @@ if not DATA_PATH.exists():
     st.stop()
 
 try:
-    wafers_all, y_all = load_dataset(str(DATA_PATH.resolve()))
+    dataset_path = hf_hub_download(
+        repo_id="monishkadamaliya/wafersight-wafer-maps",
+        filename="Wafer_Map_Datasets.npz",
+        repo_type="dataset",
+    )
+    wafers_all, y_all = load_dataset(dataset_path)
+
 except Exception as exc:
-    st.error(f"Could not load or validate the dataset: {exc}")
+    st.error(f"Could not download or load the wafer dataset: {exc}")
+    st.info(
+        "Check that your Hugging Face dataset is public "
+        "and the file exists in its main branch."
+    )
     st.stop()
 
 models = available_models()
