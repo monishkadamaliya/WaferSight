@@ -1283,10 +1283,6 @@ def page_methodology():
 # MAIN
 # ============================================================
 
-if not DATA_PATH.exists():
-    st.error(f"Dataset file not found: {DATA_PATH.resolve()}")
-    st.info("Place Wafer_Map_Datasets.npz in the same folder as appv3.py.")
-    st.stop()
 
 try:
     dataset_path = hf_hub_download(
@@ -1304,7 +1300,6 @@ except Exception as exc:
     )
     st.stop()
 
-models = available_models()
 
 with st.sidebar:
     st.markdown("## WaferSight")
