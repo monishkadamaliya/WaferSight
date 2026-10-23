@@ -2,6 +2,23 @@
 
 WaferSight is a Streamlit-based application for exploring semiconductor wafer maps and viewing machine-learning predictions for wafer defect labels. It combines wafer-map visualization with multi-label prediction scores and, when labels are available in the dataset, a comparison against the sample's ground-truth labels.
 
+
+## Ownership & Copyright
+
+**WaferSight** is an independently developed machine-learning project created by **Monish Jain**.
+
+Copyright © 2026 Monish Jain. All rights reserved, subject to applicable third-party rights and licenses.
+
+The original source code, project-specific documentation, and original application design are protected by applicable copyright law to the extent they qualify for protection. No license is granted to reproduce, redistribute, or commercially exploit these original materials except as permitted by applicable law or with prior written permission from the relevant rights holder.
+
+Third-party libraries, datasets, model artifacts, and other materials remain subject to their respective owners' rights and applicable licenses. This notice does not claim ownership of third-party materials or of the underlying wafer-map dataset.
+
+**Official project links**
+- **Creator:** Monish Jain
+- **Live demo:** https://wafersight-monishjain.streamlit.app/
+- **Source repository:** https://github.com/monishkadamaliya/WaferSight
+- **Dataset repository:** https://huggingface.co/datasets/monishkadamaliya/wafersight-wafer-maps
+
 ## Features
 
 - **Wafer-map visualization:** Inspect an individual wafer map in the dashboard.
@@ -152,8 +169,13 @@ For a more complete evaluation, include per-label precision, recall, and F1 scor
 
 ## License and data attribution
 
-Add the appropriate project license and dataset citation or attribution here before public release. Do not assume the dataset is freely redistributable; check its original terms.
+No permissive open-source license is granted by this repository's ownership notice. Unless a separate license says otherwise, the original project materials remain subject to applicable copyright law. Public visibility on GitHub does not mean the project is in the public domain; GitHub's platform terms may still allow viewing and forking on GitHub.
+
+The dataset and third-party dependencies are not claimed as original works by the project author. Check the original dataset terms and each dependency's license before redistribution or commercial use.
 
 ## Author
 
-Add your name, institution/team, and contact or project link here if appropriate.
+Created by **Monish Jain**.
+
+- Live demo: https://wafersight-monishjain.streamlit.app/
+- GitHub: https://github.com/monishkadamaliya/WaferSight
