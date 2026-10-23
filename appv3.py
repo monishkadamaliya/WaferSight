@@ -1301,6 +1301,9 @@ except Exception as exc:
     st.stop()
 
 
+# Discover saved model artifacts before the sidebar and page routing use them.
+models = available_models()
+
 with st.sidebar:
     st.markdown("## WaferSight")
     st.caption("DEFECT INTELLIGENCE PLATFORM")
