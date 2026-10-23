@@ -1,3 +1,10 @@
+# WaferSight — ML-Powered Wafer Fault Detection
+# Copyright (c) 2026 Monish Jain
+# All rights reserved, subject to applicable third-party rights and licenses.
+# Original project code may not be reproduced, redistributed, or commercially
+# exploited without permission, except as permitted by applicable law or an
+# express written license from the relevant rights holder.
+
 """WaferSight: wafer defect intelligence dashboard (Streamlit)."""
 
 import io
@@ -1330,6 +1337,8 @@ else:
     page_methodology()
 
 st.markdown(
-    '<div class="footer">WAFERSIGHT · ACADEMIC PROJECT DEMONSTRATION</div>',
+    '<div class="footer">WAFERSIGHT · © 2026 MONISH JAIN · ORIGINAL PROJECT CODE & DESIGN<br>'
+    '<a href="https://github.com/monishkadamaliya/WaferSight" target="_blank">SOURCE REPOSITORY</a> · '
+    '<a href="https://wafersight-monishjain.streamlit.app/" target="_blank">LIVE DEMO</a></div>',
     unsafe_allow_html=True,
 )
